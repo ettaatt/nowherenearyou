@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+
+body{
+  background-image: url("Background.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #ffff;
+  background-color: #11191b;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+  color:#d9a943;
+}
+
+#webtitle{
+  width:1000px;
+  margin: auto;
+  padding-top: 50px;
+
+}
+
+#buttoncontainer{
+  margin: 30px 300px 15px;
+  background-color: #11191bd6;
+  border: 5px solid #d75549;
+  border-radius: 15px;
+  padding: 5px 0px;
+  font-size: 16px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#abt-btn, #media-btn, #link-btn{
+  width:180px;
+  height:75px;
+  background-size: cover;
+}
+
+#abt-btn{
+  background-image: url("abt-1.webp");
+}
+
+#abt-btn:hover{
+  background-image: url("abt-2.webp");
+}
+
+#media-btn{
+  background-image: url("media-1.webp");
+  width:180px;
+}
+
+#media-btn:hover{
+  background-image: url("media-2.webp");
+}
+
+#link-btn{
+  background-image: url("link-1.webp");
+}
+
+#link-btn:hover{
+  background-image: url("link-2.webp");
+}
+
+.maintext{
+  margin: 15px 175px;
+  background-color: #11191bd6;
+  border: 5px solid #d75549;
+  border-radius: 15px;
+  padding: 5px 75px;
+  font-size: 16px;
+  text-align: left;
+  
+}
+
+.style1{
+  text-align:center;
+}
+
+@media screen and (max-width: 1175px){
+
+  #webtitle{
+    width:90%;
+  }
+
+  #buttoncontainer{
+    margin:15px 0px;
+    padding: 5px 0px;
+  }
+
+  .maintext{
+    margin:0px 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  #abt-btn, #media-btn, #link-btn{
+    width:120px;
+    height:50px;
+  }
+
+}
+
+
+/* media page css */
+
+.container{
+  width:100%;
+}
+
+.carousel-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 44px 0;
+}
+
+.item-list{
+  height:60vh;
+  display:flex;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.item{
+  scroll-snap-align: center;
+}
+
+h1{
+  text-align:center;
+}
+
+h2{
+  text-align:center;
+}
+
+/* this is link page css */
+
+.babypage{
+  width:100%;
+  height:60vh;
+  background:rgb(225, 219, 219);
+  overflow:auto;
+  padding:15px 120px;
+}
