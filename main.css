@@ -26,13 +26,6 @@ a{
 
 }
 
-#topcontainer{
-  margin: 15px 175px;
-  background-color: #11191bd6;
-  border: 5px solid #d75549;
-  border-radius: 15px;
-}
-
 .topbutton{
   font-size: 200%;
 }
@@ -44,37 +37,48 @@ a{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin: 15px 175px;
+  background-color: #11191bd6;
+  border: 5px solid #d75549;
+  border-radius: 15px;
 }
 
-#abt-btn, #media-btn, #link-btn{
+#abt-btn, #media-btn, #link-btn, #char-btn{
   width:180px;
   height:75px;
   background-size: cover;
 }
 
 #abt-btn{
-  background-image: url("abt-1.webp");
+  background-image: url("abt-01.webp");
 }
 
 #abt-btn:hover{
-  background-image: url("abt-2.webp");
+  background-image: url("abt-02.webp");
+}
+
+#char-btn{
+  background-image: url("char-01.webp");
+}
+
+#char-btn:hover{
+  background-image: url("char-02.webp");
 }
 
 #media-btn{
-  background-image: url("media-1.webp");
-  width:180px;
+  background-image: url("media-01.webp");
 }
 
 #media-btn:hover{
-  background-image: url("media-2.webp");
+  background-image: url("media-02.webp");
 }
 
 #link-btn{
-  background-image: url("link-1.webp");
+  background-image: url("links-01.webp");
 }
 
 #link-btn:hover{
-  background-image: url("link-2.webp");
+  background-image: url("links-02.webp");
 }
 
 .maintext{
@@ -159,4 +163,40 @@ h2{
   background:rgb(225, 219, 219);
   overflow:auto;
   padding:15px 120px;
+}
+
+/* this is character page css */
+.charbox{
+  padding:15px 100px;
+}
+
+.gone{
+  display:none;
+}
+
+.name{
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.playedby{
+  font-style: italic;
+  font-size:14px;
+}
+
+.desc{
+  font-size:18px;
+}
+
+.d2{
+  margin-left: 50px;
+}
+
+.divider{
+  text-align: center;
+  color:#d9a943;
+}
+
+.charbox button{
+  margin-left: 50px;
 }
