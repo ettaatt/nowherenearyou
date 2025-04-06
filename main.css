@@ -193,10 +193,30 @@ h2{
 }
 
 .divider{
-  text-align: center;
-  color:#d9a943;
+  height:1px;
+  width:80%;
+  border-bottom: #d9a943 dashed 2px;
+  margin: auto;
 }
 
 .charbox button{
   margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+#crewbox{
+  display:flex;
+  gap:30px;
+}
+
+#crewbox table{
+  width:50%;
+}
+#crewbox td{
+  width:20%;
+}
+
+.role{
+  font-weight: bold;
+  font-size:115%;
 }
