@@ -1,0 +1,180 @@
+body{
+    font-family: sans-serif;
+    font-size: 90%;
+    line-height:130%;
+}
+
+
+hr{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color:#3366cc;
+}
+
+sup { 
+    vertical-align: top; 
+    position: relative; 
+    top: -0.6em; 
+    font-size: 65%;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    display:flex;
+    /* background:skyblue; */
+    align-items: center;
+    margin:auto;
+    width:90vw;
+}
+
+.searchbar{
+    width:500px;
+    height:32px;
+    background:white;
+    border: solid 1px black;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7px;
+    color:gray;
+    font-size: 80%;
+}
+
+.searchcontent{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+#magicon{
+    height:18px;
+}
+
+#searchbutton{
+    height:32px;
+    width:70px;
+    background-color: #f8f9fa;
+    border-left: solid 1px black;
+    color:black;
+    font-weight: bold;
+    font-size: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    transition:background-color .25s;
+}
+
+#searchbutton:hover{
+    background-color: #dfdfdf;
+}
+
+#title{
+    font-family:serif;
+    font-style: italic;
+    margin-bottom:10px;
+    line-height: 1.375;
+}
+
+.undertitle{
+    display:flex;
+    justify-content:space-between;
+    height:40px;
+    align-items: center;
+}
+
+.ut-left, .ut-right{
+    display:flex;
+    gap:20px;
+    color:#3366cc;
+}
+
+.content{
+    /* background:rgb(249, 198, 179); */
+    width:90vw;
+    display:flex;
+    gap:40px;
+    margin:auto;
+}
+
+h2{
+    font-family: serif;
+    font-weight: normal;
+    font-size:150%;
+    margin-bottom:10px;
+}
+
+.leftmenu{
+    width:200px;
+    height:300px;
+    font-size: 90%;
+    position:sticky;
+    top:10px;
+    line-height: 2;
+}
+
+.maincontent{
+    width:100%;
+}
+
+.infobox{
+    width:300px;
+    float:right;
+    background:#f8f9fa;
+    border:solid 1px black;
+    display:flex;
+    justify-content: center;
+    text-align: left;
+    padding:15px;
+    margin:10px;
+}
+
+.infotitle{
+    font-size: 125%;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+#poster{
+    max-width: 100%;
+}
+
+.casttable{
+    background-color: #f8f9fa;
+    border:1px solid #a2a9b1;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.casttable th{
+    background-color: #eaecf0;
+    border:1px solid #a2a9b1;
+    padding:10px;
+}
+
+.casttable td{
+    border:1px solid #a2a9b1;
+    text-align:center;
+    padding:10px;
+}
+
+#songbox{
+    display:flex;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .leftmenu{
+        display:none
+    }
+  }

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nowhere Near You</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="icon" type="image/x-icon" href="../Favicon.png">
+    </head>
+    <body>
+        <div class="style1">
+            <img src="../WebTitle.webp" id="webtitle">
+            <br>
+            <br>
+            <div id="buttoncontainer">
+                <a href="../index.html"><div id="abt-btn"></div></a>
+                <a href="index.html"><div id="char-btn"></div></a>
+                <a href="../media/index.html"><div id="media-btn"></div></a>
+                <a href="../links/index.html"><div id="link-btn"></div></a>
+            </div>
+
+    
+            <div class="maintext">
+                <h1>Cast and Characters</h1>
+
+                    <div class="charbox">
+                        <h2>Characters</h2>
+                        <p>Warning: This page contains spoilers, so proceed with caution. Normally I would reccommend watching the show first, but that's not really an option at the moment, so might as well spoil it in my opinion.</p>
+                        <hr>
+                        <h3 class="name">Nora Thompson</h3>
+                        <p class="playedby">Played by Devon Roland, u/s Tina Collins</p>
+                        <p class="desc">“In most stories, when someone is boring, they are boring in their own unique way. They watch paint dry, they collect stamps, or they speak in a way dull that it circles back to being interesting. You couldn't say that about Nora. You probably know a Nora, which makes her much less interesting to watch.” <br><br>
+    
+                        Nora is the protagonist of <i>Blood Runs Cold</i>, an incredibly uninteresting woman, seemingly content with her current position in life. She lives alone after the passing of her wife, Iris, until one day, a mysterious stranger delivers a diary to her, bringing along Iris' restless spirit. </p>
+    
+                        <button onclick="noraSpoilers()">Spoilers</button>
+                        <p id="noraspoiler" class="gone desc d2">When faced with Iris’s offer, Melanie is completely distraught. The idea of either losing her wife again or having to murder someone completely devastates her, but she makes her choice. She fails to kidnap Adrian, but ends up successfully kidnapping Taylor, until Nora intervenes.</p>
+    
+                        <br>
+                        <div class="divider"></div>
+    
+                        <h3 class="name">Melanie Edwards</h3>
+                        <p class="playedby">Played by Paige Martin, u/s Lena Riley</p>
+                        <p class="desc">Melanie is Nora’s coworker, bright, spunky, and a little bit awkward, but with a heart of gold nonetheless. While she’s kind to Nora, she can only bear a conversation with her for so long, so she tends to keep interactions brief. </p>
+    
+                        <button onclick="melSpoilers()">Spoilers</button>
+                        <p id="melspoiler" class="gone desc d2">When faced with Iris’s offer, Melanie is completely distraught. The idea of either losing her wife again or having to murder someone completely devastates her, but she makes her choice. She fails to kidnap Adrian, but ends up successfully kidnapping Taylor, until Nora intervenes.</p>
+                        
+                        <br>
+                        <div class="divider"></div>
+                    
+                        <h3 class="name">Iris</h3>
+                        <p class="playedby">Played by Lydia Ann Burke, u/s Claire Macias</p>
+                        <p class="desc">Nora's wife, who tragically passed about a year before the story's events. With the delivery of her diary, Iris returns from beyond to offer Nora a terrible choice: sacrifice someone to bring her back to life.</p>
+    
+                        <button onclick="irisSpoilers()">Spoilers</button>
+                        <p id="irisspoiler" class="gone desc d2">As it turns out, Iris is a manifestation of the Voices From Beyond. Originally created as Nora's partner, her goal is to manipulate Nora into action - whether that action is to bring her back through sacrifice, or banish her, it doesn't really matter. Either option is entertaining.When Nora refuses to pick either option, the Voices From Beyond alter reality, changing history so that she was Melanie's wife before she passed. She is banished from reality after Nora destroys her diary at the end of the second act.</p>
+                        
+                        <br>
+                        <div class="divider"></div>
+
+                        <h3 class="name">Adrian</h3>
+                        <p class="playedby">Played by Grayson MacDonald, u/s Mariah Newman</p>
+                        <p class="desc">A member of a clique of gossipy coworkers of Nora and Melanie, Adrian is very observant, quickly noticing any changes in the people around them, and voicing their observations to their friends for speculation. Adrian and their friends act as semi-narrators throughout the show, commenting on the states of Nora and Melanie as they change throughout the story.<br><br>
+                        Adrian is written neutrally, and can be acted as either gender. Grayson played Adrian as a man, while Mariah played Adrian as a woman. 
+                        </p>
+    
+                        <button onclick="adriSpoilers()">Spoilers</button>
+                        <p id="adrispoiler" class="gone desc d2">In act 2, Melanie attempts to kidnap Adrian, and sacrifice them to bring Iris back from the dead. She almost succeeds, until Nora interrupts their conversation. Her incredibly awkward interference is so noteworthy and out of character, that they immediately leave Melanie, running to the others to report on the incident, and unknowingly avoiding the kidnapping.</p>
+    
+                        <br>
+                        <div class="divider"></div>
+
+                        <h3 class="name">Taylor</h3>
+                        <p class="playedby">Played by Juniper Shannon, u/s Ryan Andrew Fuller</p>
+                        <p class="desc">Another person in the clique of gossipy coworkers, Taylor is mostly just excited to be included. Not quite as subtle as their friends, Taylor's backhanded observations tend be a little too direct, and they tend to jump to wild conclusions while gossiping. <br><br>
+    
+                        Taylor is written neutrally, and can be acted as either gender. Juniper portrayed Taylor neutrally, and Ryan played them as a man. 
+                        </p>
+    
+                        <button onclick="taySpoilers()">Spoilers</button>
+                        <p id="tayspoiler" class="gone desc d2">Towards the end of Act 2, we see that Taylor has been kidnapped by Melanie, and is nearly sacrificed until Nora intervenes. They're very excited to have such an interesting story to bring back to their friends.</p>
+    
+                        <br>
+                        <div class="divider"></div>
+
+                        <h3 class="name">Sam</h3>
+                        <p class="playedby">Played by Anjali Willis, u/s Ryan Andrew Fuller</p>
+                        <p class="desc">Rounding out the clique is Sam, a master of the backhanded compliment. Sam takes pleasure in pointing out potential insecurities, but they are sensitive to having it dealt back to them.<br><br>
+    
+                        Sam is written neutrally, and can be acted as either gender. Anjali played Sam as a woman, while Ryan played Sam as a man. </p>
+    
+                        <br>
+                        <div class="divider"></div>
+
+                        <h3 class="name">The Mysterious Stranger</h3>
+                        <p class="playedby">Played by Jeremy A. Harmon u/s Mariah Newman</p>
+                        <p class="desc">The Mysterious Stranger visits Nora's home late one night, leaving a book at her doorstep. The book is Iris' diary, which houses her spirit.</p>
+    
+                        <button onclick="mysSpoilers()">Spoilers</button>
+                        <p id="mysspoiler" class="gone desc d2">The Mysterious Stranger is another manifestation of the Voices From Beyond, jumpstarting the story by giving the diary to Nora. He can sometimes be seen in the background of scenes observing the action.</p>
+    
+                        <br>
+                        <div class="divider"></div>
+
+                        <h3 class="name">The Voices From Beyond</h3>
+                        <button onclick="voiceSpoilers()">Spoilers</button>
+                        <p id="voicespoiler" class="gone desc d2">Strange powerful forces from beyond time and space. The Voices from Beyond are played as a collective by the ensemble of the show. These forces toy with our reality in order to craft their own twisted entertainment. They craft Iris and place her in Nora's past, hoping that the choice offered to her will spark some latent personality, and create a tragic story for them to enjoy - either Nora is forced into madness, having blood on her hands, or Nora is forced into despair, losing Iris a second time. Unfortunately for them, they don't get to see either story unfold.</p>
+                            <br><br>
+                        <hr>
+    
+
+                        <h2>Crew</h2>
+                            <div id="crewbox">
+                                <table>
+                                    <tr>
+                                        <td class="role">Book</td>
+                                        <td>Julia Stafford & Tess Lyons</td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="role">Music & Lyrics</td>
+                                        <td>Cassandra Quinn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Scenic Design</td>
+                                        <td>Chris Friedman</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Costume Design</td>
+                                        <td>Sophia Renee Collins</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Lighting Design</td>
+                                        <td>Miles Gibbs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Sound Design</td>
+                                        <td>Georgia Middleton</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Hair & Makeup Design</td>
+                                        <td>Estelle Greer</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Stage Manager</td>
+                                        <td>Leo Parrish</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Assistant Stage Manager</td>
+                                        <td>Leslie C. Wong</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Props Master</td>
+                                        <td>Nico M. Duarte</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Dance Captain</td>
+                                        <td>Lucas Osborne</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Music Director</td>
+                                        <td>Cassanra Quinn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Choreography</td>
+                                        <td>Dylan Webb</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Director</td>
+                                        <td>Tess Lyons</td>
+                                    </tr>
+                                </table>
+            
+                                <table>
+                                    <tr>
+                                        <td class="role">Keyboard 1</td>
+                                        <td>Daisy Sanchez</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Keyboard 2/Guitar</td>
+                                        <td>Malik Wolfe</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Bass</td>
+                                        <td>Hallie Castillo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Drums</td>
+                                        <td>Simone Zuniga</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Ensemble</td>
+                                        <td>Tina Collins, Lena Riley, Claire Macias, Lucy Spence, Grant Aldaro, Ryan Andrew Fuller, Mariah Newman, Tyler Bartlett</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="role">Swings</td>
+                                        <td>Harper Brennan, Mallory Ventura & Adam Yang</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        <hr>
+                    </div>
+                   
+
+            </div>
+        </div>
+    
+        <script>
+            function noraSpoilers() {
+            var element = document.getElementById("noraspoiler");
+            element.classList.toggle("gone");
+            }
+
+            function melSpoilers() {
+            var element = document.getElementById("melspoiler");
+            element.classList.toggle("gone");
+            }
+
+            function irisSpoilers() {
+            var element = document.getElementById("irisspoiler");
+            element.classList.toggle("gone");
+            }
+
+            function adriSpoilers() {
+            var element = document.getElementById("adrispoiler");
+            element.classList.toggle("gone");
+            }
+
+            function taySpoilers() {
+            var element = document.getElementById("tayspoiler");
+            element.classList.toggle("gone");
+            }
+
+            function mysSpoilers() {
+            var element = document.getElementById("mysspoiler");
+            element.classList.toggle("gone");
+            }
+
+            function voiceSpoilers() {
+            var element = document.getElementById("voicespoiler");
+            element.classList.toggle("gone");
+            }
+        </script>
+    </body>
+</html>
