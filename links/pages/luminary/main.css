@@ -10,6 +10,35 @@ img{
     max-width: 100%;
 }
 
+header{
+  background-color: #D94E81;
+}
+
+#topheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#topheader img{
+  width: 30%;
+}
+
+#search{
+  width:17%;
+  height:40px;
+  border-radius:14px;
+  border: 1px white solid;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px;
+}
+
+#search img{
+  height:20px;
+}
+
 #titlebox{
   background-color: rgb(20, 2, 2);
   color: white;
@@ -20,6 +49,16 @@ img{
   font-size: 48px;
 }
 
-#review{
+#reviewbox{
   margin:15px 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 480px) {
+  #search{
+    display:none;
+  }
+
 }

@@ -13,6 +13,10 @@ body{
 
 img{
     max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 a{
@@ -110,12 +114,13 @@ a{
 
   .maintext{
     margin:0px 0px;
+    padding: 50px 15px;
   }
 }
 
 @media screen and (max-width: 575px) {
 
-  #abt-btn, #media-btn, #link-btn{
+  #abt-btn, #media-btn, #link-btn, #char-btn{
     width:120px;
     height:50px;
   }
@@ -131,21 +136,30 @@ a{
 
 .carousel-view {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
   padding: 44px 0;
 }
 
 .item-list{
-  height:60vh;
-  display:flex;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;               /* scroll only horizontally */
+  overflow-y: hidden;             /* disable vertical scrolling */
   scroll-behavior: smooth;
-  overflow: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  height: 60vh;                   /* set fixed height */
+  padding: 0 10px;
 }
 
 .item{
+  display: block;
+  height: 100%;                   /* match .item-list height */
+  width: auto;                    /* width adjusts per image ratio */
+  object-fit: contain;
   scroll-snap-align: center;
+  flex: 0 0 auto;
 }
 
 h1{
@@ -168,7 +182,7 @@ h2{
 
 /* this is character page css */
 .charbox{
-  padding:15px 100px;
+  padding:15px 7%;
 }
 
 .gone{
@@ -220,4 +234,33 @@ h2{
 .role{
   font-weight: bold;
   font-size:115%;
+}
+
+
+@media screen and (max-width: 750px) {
+
+  #crewbox{
+    flex-direction: column;
+  }
+
+  #crewbox{
+    width:100%;
+  }
+
+  #crewbox table{
+    width:100%;
+  }
+  #crewbox td{
+    width:30%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .charbox{
+    padding:15px 2%;
+  }
+
+
 }

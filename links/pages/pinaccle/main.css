@@ -6,7 +6,6 @@ body{
   margin:0;
   background-color: #f4f4f4;
   width:100vw;
-  overflow: hidden;
 }
 
 img{
@@ -145,14 +144,18 @@ footer img{
   }
 
   #profile{
-    height:50px; 
-    width:50px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #profile{
     height:40px; 
     width:40px;
   }
+
+  #dayton, #date{
+    font-size: .7em;
+  }
 }
+
+/* @media screen and (max-width: 450px) {
+  #profile{
+    height:40px; 
+    width:35px;
+  }
+} */
