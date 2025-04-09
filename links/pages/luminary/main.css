@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  } 
+
+body{
+  margin:0;
+}
+
+img{
+    max-width: 100%;
+}
+
+#titlebox{
+  background-color: rgb(20, 2, 2);
+  color: white;
+  padding: 2% 10%;
+}
+
+#titlebox h1{
+  font-size: 48px;
+}
+
+#review{
+  margin:15px 15%;
+}

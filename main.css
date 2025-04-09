@@ -34,13 +34,14 @@ a{
   padding: 5px 0px;
   font-size: 16px;
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap:15px;
   align-items: center;
   flex-wrap: wrap;
   margin: 15px 175px;
-  background-color: #11191bd6;
+  /* background-color: #11191bd6;
   border: 5px solid #d75549;
-  border-radius: 15px;
+  border-radius: 15px; */
 }
 
 #abt-btn, #media-btn, #link-btn, #char-btn{
