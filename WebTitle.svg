@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 783.61 119.06">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: LostaFrida-Regular, 'Losta Frida';
+        font-size: 90px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(1.56 79.91)"><tspan class="cls-5" x="0" y="0">N</tspan><tspan class="cls-3" x="49.32" y="0">O</tspan><tspan class="cls-7" x="95.22" y="0">W</tspan><tspan class="cls-8" x="185.04" y="0">H</tspan><tspan x="242.1" y="0">ERE </tspan><tspan class="cls-8" x="406.17" y="0">N</tspan><tspan class="cls-6" x="458.46" y="0">E</tspan><tspan class="cls-4" x="503.64" y="0">A</tspan><tspan x="556.38" y="0">R </tspan><tspan class="cls-2" x="624.15" y="0">Y</tspan><tspan x="671.58" y="0">OU</tspan></text>
+</svg>

@@ -4,6 +4,7 @@
 
 body{
   margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img{
@@ -12,6 +13,7 @@ img{
 
 header{
   background-color: #D94E81;
+  padding:10px;
 }
 
 #topheader{
@@ -21,39 +23,129 @@ header{
 }
 
 #topheader img{
-  width: 30%;
+  width: 60%;
+  max-width: 560px;
+  cursor:pointer;
+}
+
+#nav{
+  color:#efdbe2;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+#nav span:hover{
+  color:#a61a4d;
+  cursor:pointer;
 }
 
 #search{
   width:17%;
   height:40px;
-  border-radius:14px;
-  border: 1px white solid;
+  border-radius:20px;
+  background-color: #e1799f;
+  color: #efdbe2;
   display:flex;
   align-items: center;
   justify-content: space-between;
   padding:10px;
+  cursor:pointer;
 }
 
 #search img{
   height:20px;
+  width: 20px;
 }
 
 #titlebox{
-  background-color: rgb(20, 2, 2);
+  background-color: rgb(33, 23, 23);
   color: white;
   padding: 2% 10%;
 }
 
 #titlebox h1{
   font-size: 48px;
+  margin: 15px 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.credits{
+  font-size:14px;
+  line-height:1.2;
+  margin-left: 20px;
+}
+
+#caption{
+  color:#666;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
 }
 
 #reviewbox{
   margin:15px 15%;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+#reviewbox img{
+  width:100%;
+  max-width: 750px;
+  margin: auto;
+}
+
+#trendingbox{
+  padding:15px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#trending{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+
+li{
+  font-weight: bold;
+  color:#323232;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+li::marker{
+  color: #D94E81;
+  font-weight: bold;
+  background-color: aquamarine;
+}
+
+
+footer{
+  background-color: #323232;
+  padding:10px;
+  color:#efdbe2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img{
+  width:40%;
+  max-width: 350px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {

@@ -21,6 +21,11 @@ img{
 
 a{
   color:#d9a943;
+  transition: color .25s;
+}
+
+a:hover{
+  color:#d75549;
 }
 
 #webtitle{

@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="style1">
-            <img src="WebTitle.webp" id="webtitle">
+            <img src="WebTitle.svg" id="webtitle">
             <br>
             <br>
             <div id="buttoncontainer">
@@ -39,6 +39,10 @@
             </div>
         </div>
     
-
+        <script>
+            if (window.location.href.endsWith(".html")) {
+              window.location.href = window.location.href.replace(".html", "");
+            }
+          </script>
     </body>
 </html>

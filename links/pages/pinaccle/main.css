@@ -26,13 +26,26 @@ header img{
   height:50px;
 }
 
+header img:hover{
+  cursor: pointer;
+}
+
 .icon{
   height:30px;
+}
+
+.icon:hover{
+  filter: invert(53%) sepia(10%) saturate(16%) hue-rotate(317deg) brightness(93%) contrast(95%);
 }
 
 #category{
   font-family: public sans, sans-serif;
   font-size: 1.2em;
+}
+
+#category span:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 h1{
@@ -46,6 +59,7 @@ h1{
 #caption{
   font-size: .8em;
   color: #75726a;
+  text-align: center;
 }
 
 #byline{
@@ -68,6 +82,11 @@ h1{
 
 #dayton{
   font-size: 1em;
+}
+
+#dayton:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #date{
@@ -100,10 +119,18 @@ p{
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 1.2em;
+  line-height: 1;
+  font-family: public sans, sans-serif;
+  margin: 5px 0px;
 }
 
 .article{
   width:32%;
+}
+
+.article:hover{
+  color:#75726a;
+  cursor: pointer;
 }
 
 footer{
@@ -126,6 +153,11 @@ footer div{
 footer img{
   width:25%;
   margin: auto;
+}
+
+footer span:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 
