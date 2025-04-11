@@ -5,3 +5,39 @@
 img{
     max-width: 100%;
 }
+
+body{
+  background-color: blueviolet;
+  margin: 0;
+}
+
+#content{
+  width: 950px;
+  height:100%;
+  margin:auto;
+  background: rgb(185, 237, 185);
+}
+
+.song{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.song img{
+  height:30px;
+}
+
+.songname{
+  font-size: 20px;
+  margin:2px;
+}
+
+.singers{
+  font-size: 10px;
+  margin:2px;
+}
+
+.gone{
+  display:none;
+}
