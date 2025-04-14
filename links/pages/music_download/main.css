@@ -7,15 +7,86 @@ img{
 }
 
 body{
-  background-color: blueviolet;
   margin: 0;
+  background-image: url("water-background.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color:#031B2F;
 }
+
+header{
+  background-color: #0F5085;
+  width: 950px;
+  margin: auto;
+  color:#d1e5f7;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  
+}
+
+#logo{
+  width:80%;
+}
+
+#logo:hover{
+  cursor: pointer;
+}
+
+#nav{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+#nav span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #de7474;
+}
+
 
 #content{
   width: 950px;
   height:100%;
   margin:auto;
-  background: rgb(185, 237, 185);
+  background: #d1e5f7;
+  padding: 15px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border:10px solid #FF6978; */
+}
+
+#downall{
+  width:175px;
+}
+
+#downall:hover{
+ cursor: pointer;
+ filter: brightness(0) saturate(100%) invert(36%) sepia(36%) saturate(1111%) hue-rotate(314deg) brightness(84%) contrast(82%);
+}
+
+td{
+  padding: 5px 10px;
+}
+
+.controls, .download{
+  width:30px;
+  height:30px;
+  padding:2px;
+}
+
+.download:hover{
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(36%) saturate(1111%) hue-rotate(314deg) brightness(84%) contrast(82%);
 }
 
 .song{
@@ -36,6 +107,11 @@ body{
 .singers{
   font-size: 10px;
   margin:2px;
+}
+
+h2{
+  margin: 15px 0px 0px 0px;
+  font-size:30;
 }
 
 .gone{

@@ -4,146 +4,414 @@
         <title>Blood Runs Cold Soundtrack</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="favicon.svg">
     </head>
     <body>
-        <div id="content">
-            <div id="tracklist">
-                <div class="song">
-                    <p>1.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play1">
-                        <img src="pause.svg" id="pause1" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">Boring</p>
-                        <p class="singers">Paige Martin, Grayson MacDonald, Juniper Shannon, Anjali Willis & Company</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-    
-                <div class="song">
-                    <p>2.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play2">
-                        <img src="pause.svg" id="pause2" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">From Beyond</p>
-                        <p class="singers">Lydia Anne Burke</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>3.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play3">
-                        <img src="pause.svg" id="pause3" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">All I Ask of You</p>
-                        <p class="singers">Lydia Anne Burke</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>4.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play4">
-                        <img src="pause.svg" id="pause4" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">Something's Up With Nora</p>
-                        <p class="singers">Grayson MacDonald, Juniper Shannon, & Anjali Willis</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>5.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play5">
-                        <img src="pause.svg" id="pause5" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">Blood Runs Cold</p>
-                        <p class="singers">Lydia Anne Burke & Company</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>6.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play6">
-                        <img src="pause.svg" id="pause6" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">The Voices From Beyond</p>
-                        <p class="singers">Jeremy Harmon & Company</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>7.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play7">
-                        <img src="pause.svg" id="pause7" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">The Story Resets</p>
-                        <p class="singers">Company</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>8.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play8">
-                        <img src="pause.svg" id="pause8" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">Boring (Reprise)</p>
-                        <p class="singers">Paige Martin, Grayson MacDonald, Juniper Shannon, Anjali Willis, Jeremy Harmon, & Company</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>9.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play9">
-                        <img src="pause.svg" id="pause9" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">Something's Up With Melanie</p>
-                        <p class="singers">Grayson MacDonald, Juniper Shannon, & Anjali Willis</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
-
-                <div class="song">
-                    <p>10.</p>
-                    <div class="controls" onClick="togglePlay()">
-                        <img src="play.svg" id="play10">
-                        <img src="pause.svg" id="pause10" class="gone">
-                    </div>
-                    <div>
-                        <p class="songname">From Beyond/All I Ask of You</p>
-                        <p class="singers">Company</p>
-                    </div>
-                <img src="download.svg" onclick="error()">
-                </div>
+        <header>
+            <img src="Cassie.svg" id="logo">
+            <div id="nav">
+                <span>BIO</span>
+                <span>THEATER</span>
+                <span>ALBUMS</span>
+                <span>CONTACT</span>
             </div>
+        </header>
+
+        <div id="content">
+            <p style="max-width:700px;"><i>Blood Runs Cold</i> is a musical that I composed in 2022 alongside writers Julia Stafford and Tess Lyons. After the show had it's original run, we recorded our own cast album, which you can download here, alongside a few extra songs that never made it to the stage. </p>
+            <img src="Webcontrols.svg" id="downall" onclick="error2()">
+            <div id="tracklist">
+                <table>
+                    <tr>
+                        <td>1.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Boring</p>
+                            <p class="singers">Paige Martin, Grayson MacDonald, Juniper Shannon, Anjali Willis & Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">From Beyond</p>
+                            <p class="singers">Lydia Anne Burke</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>3.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">All I Ask of You</p>
+                            <p class="singers">Lydia Anne Burke</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>4.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Something's Up With Nora</p>
+                            <p class="singers">Grayson MacDonald, Juniper Shannon, & Anjali Willis</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>5.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Blood Runs Cold</p>
+                            <p class="singers">Lydia Anne Burke & Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>6.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">The Voices From Beyond</p>
+                            <p class="singers">Jeremy Harmon & Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>7.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">The Story Resets</p>
+                            <p class="singers">Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>8.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Boring (Reprise)</p>
+                            <p class="singers">Paige Martin, Grayson MacDonald, Juniper Shannon, Anjali Willis, Jeremy Harmon, & Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>9.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Something's Up With Melanie </p>
+                            <p class="singers">Grayson MacDonald, Juniper Shannon, & Anjali Willis</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>10.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">From Beyond / All I Ask of You</p>
+                            <p class="singers">Lydia Ann Burke & Paige Martin</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>11.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Comfort Zone</p>
+                            <p class="singers">Nora Roland</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>12.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Are You Free Tonight?</p>
+                            <p class="singers">Paige Martin, Lydia Ann Burke, & Lydia Ann Burke</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>13.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Whatever it Takes</p>
+                            <p class="singers">Paige Martin & Devon Roland</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>14.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">Someone Has to Try</p>
+                            <p class="singers">Devon Roland</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>15.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">The Ritual</p>
+                            <p class="singers">Paige Martin & Juniper Shannon</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>16.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">The Voices Return</p>
+                            <p class="singers">Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>17.</td>
+                        <td>
+                            <div class="controls" onClick="togglePlay(this)">
+                                <img src="play.svg" class="play-icon">
+                                <img src="pause.svg" class="pause-icon gone">
+                            </div>
+                         </td>
+                         <td>
+                            <p class="songname">The Story Resets / Finale</p>
+                            <p class="singers">Devon Roland, Jeremy A. Harmon, & Company</p>
+                         </td>
+                         <td>
+                            <img src="download.svg" onclick="error()" class="download">
+                         </td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Bonus Songs</h2>
+            <p>These are demos of songs that never made it into the final show.</p>
+            <table>
+                <tr>
+                    <td>
+                        <div class="controls" onClick="togglePlay(this)">
+                            <img src="play.svg" class="play-icon">
+                            <img src="pause.svg" class="pause-icon gone">
+                        </div>
+                     </td>
+                     <td>
+                        <p class="songname">Nowhere Near You</p>
+                     </td>
+                     <td>
+                        <img src="download.svg" onclick="error()" class="download">
+                     </td>
+                </tr>
+                <tr>
+                    <td  colspan="3" width="600px;">
+                        This song would've been sung by Nora in act one. The title serves a double meaning, with Nora expressing her grief over Iris, and expressing her distance from the people around her. Eventually we decided that Nora shouldn't sing at all until her character arc in the second act, to emphasize her lack of direction. You can still hear motifs and lyrics from this song in “From Beyond” and “Comfort Zone”
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="controls" onClick="togglePlay(this)">
+                            <img src="play.svg" class="play-icon">
+                            <img src="pause.svg" class="pause-icon gone">
+                        </div>
+                    </td>
+                    <td>
+                        <p class="songname">Take the Risk</p>
+                    </td>
+                    <td>
+                        <img src="download.svg" onclick="error()" class="download">
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="3" width="600px;">
+                        This was a song that I wrote fairly early in production, taking the place of “Comfort Zone” and “Someone Has to Try.” We felt that this was a lot of character development for a single song, so we decided to split this into two songs to really emphasize Nora's growth.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="controls" onClick="togglePlay(this)">
+                            <img src="play.svg" class="play-icon">
+                            <img src="pause.svg" class="pause-icon gone">
+                        </div>
+                    </td>
+                    <td>
+                        <p class="songname">The Start of Something Interesting</p>
+                    </td>
+                    <td>
+                        <img src="download.svg" onclick="error()" class="download">
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="3" width="600px;">
+                        This song would've played when the Mysterious Figure leaves the diary at Nora's home. This was a really fun song with a lot of foreshadowing, but we eventually decided that this song gave up too much too early, so we scrapped it. The Mysterious Figure was actually a much bigger character in earlier versions of the show, but we slowly shifted towards something a little more eldritch in the end.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="controls" onClick="togglePlay(this)">
+                            <img src="play.svg" class="play-icon">
+                            <img src="pause.svg" class="pause-icon gone">
+                        </div>
+                    </td>
+                    <td>
+                        <p class="songname">Killer Dilemma</p>
+                    </td>
+                    <td>
+                        <img src="download.svg" onclick="error()" class="download">
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="3" width="600px;">
+                        Melanie would have sung this in act two, right before “Are You Free Tonight?” and it would've shown how she played along with the plot much more than Nora - mentally struggling with the choice between ending another person's life and losing Iris again. We eventually ended up cutting this song for time, but I incorporated a bit of it into “From Beyond / All I Ask of You” and “Are You Free Tonight”. Another iteration of this song had the trio of coworkers (Adrian, Taylor, and Sam) singing this at Melanie as she struggles with the decision. 
+                    </td>
+                </tr>
+            </table>
         
         </div>
         <script>
             function error() {
-                alert("There was an error downloading this track. Please try again later.");
+                setTimeout(function(){
+                    alert("There was an error downloading this track. Please try again later."); 
+                }, 500);
             }
+
+            function error2() {
+                setTimeout(function() {
+                    alert("There was an error with your download(s). Please try again later.");
+            }, 500); 
+        }
+
+            
         </script>
         <script src="app.js"></script>
         <script src="jquery-3.7.1.min.js"></script>
