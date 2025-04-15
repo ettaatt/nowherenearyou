@@ -152,6 +152,8 @@ footer div{
 
 footer img{
   width:25%;
+  min-width: 200px;
+  height:auto;
   margin: auto;
 }
 
@@ -175,6 +177,11 @@ footer span:hover{
     margin: .1% 5%;
   }
 
+  .icon{
+    width: 15px;
+    height: 15px;
+  }
+
   #profile{
     height:40px; 
     width:40px;
@@ -182,6 +189,10 @@ footer span:hover{
 
   #dayton, #date{
     font-size: .7em;
+  }
+
+  footer div{
+    flex-direction: column;
   }
 }
 
