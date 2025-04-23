@@ -60,35 +60,35 @@ a:hover{
 }
 
 #abt-btn{
-  background-image: url("abt-01.webp");
+  background-image: url("abt-01.svg");
 }
 
 #abt-btn:hover{
-  background-image: url("abt-02.webp");
+  background-image: url("abt-02.svg");
 }
 
 #char-btn{
-  background-image: url("char-01.webp");
+  background-image: url("char-01.svg");
 }
 
 #char-btn:hover{
-  background-image: url("char-02.webp");
+  background-image: url("char-02.svg");
 }
 
 #media-btn{
-  background-image: url("media-01.webp");
+  background-image: url("media-01.svg");
 }
 
 #media-btn:hover{
-  background-image: url("media-02.webp");
+  background-image: url("media-02.svg");
 }
 
 #link-btn{
-  background-image: url("links-01.webp");
+  background-image: url("links-01.svg");
 }
 
 #link-btn:hover{
-  background-image: url("links-02.webp");
+  background-image: url("links-02.svg");
 }
 
 .maintext{
@@ -136,43 +136,134 @@ a:hover{
 /* media page css */
 
 .container{
+  position:relative;
   width:100%;
 }
+
+.carousel-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-mask::before,
+.carousel-mask::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.carousel-mask::before {
+  left: 0;
+  background: linear-gradient(to right, #11191b5e, transparent);
+}
+
+.carousel-mask::after {
+  right: 0;
+  background: linear-gradient(to left, #11191b5e, transparent);
+}
+
 
 .carousel-view {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 44px 0;
+  padding: 10px 0;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #11191b75;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.carousel-button:hover{
+ background-color: #11191bb8;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button.disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
 }
 
 .item-list{
   display: flex;
   flex-direction: row;
-  overflow-x: auto;               /* scroll only horizontally */
-  overflow-y: hidden;             /* disable vertical scrolling */
+  overflow-x: auto;               
+  overflow-y: hidden;             
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   gap: 10px;
-  height: 60vh;                   /* set fixed height */
+  height: 60vh;                   
   padding: 0 10px;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
 
 .item{
   display: block;
-  height: 100%;                   /* match .item-list height */
-  width: auto;                    /* width adjusts per image ratio */
+  height: 100%;                   
+  width: auto;                    
   object-fit: contain;
   scroll-snap-align: center;
   flex: 0 0 auto;
 }
 
+.caption{
+  padding: 0px 20px;
+  font-size: 1em;
+}
+
 h1{
   text-align:center;
+  margin: 10px 0px 5px;
 }
 
 h2{
   text-align:center;
+}
+
+.mediasub{
+  text-align: center;
+}
+
+.miscimages{
+  max-width: 800px;
+  margin: auto;
+  filter: saturate(.2);
+}
+
+@media (max-width: 768px) {
+  .carousel-button {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+
+  .item-list {
+    height: 40vh;
+    gap: 6px;
+  }
 }
 
 /* this is link page css */
@@ -187,7 +278,12 @@ h2{
 
 /* this is character page css */
 .charbox{
-  padding:15px 7%;
+  padding:5px 7% 25px;
+  margin-top:0px;
+}
+
+#characters{
+  margin: 5px;
 }
 
 .gone{

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.12 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: OdalisqueNF, 'Odalisque NF';
+        font-size: 16px;
+      }
+
+      .cls-2 {
+        fill: #a14037;
+      }
+
+      .cls-3 {
+        fill: #d75549;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect x="24.35" y="11.69" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+    <g>
+      <rect class="cls-2" x="27.95" y="15.29" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="27.59" y="14.93" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="27.23" y="14.57" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="26.87" y="14.21" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="26.51" y="13.85" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="26.15" y="13.49" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="25.79" y="13.13" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="25.43" y="12.77" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="25.07" y="12.41" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="24.71" y="12.05" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+      <rect class="cls-2" x="24.35" y="11.69" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+    </g>
+    <rect class="cls-3" x="24.35" y="11.69" width="130.42" height="48.62" rx="14.19" ry="14.19"/>
+  </g>
+  <text class="cls-1" transform="translate(61.56 43.36)"><tspan x="0" y="0">AB</tspan><tspan class="cls-5" x="25.63" y="0">O</tspan><tspan class="cls-6" x="36.59" y="0">U</tspan><tspan class="cls-4" x="46.56" y="0">T</tspan></text>
+</svg>
