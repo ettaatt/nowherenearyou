@@ -113,13 +113,38 @@ background-color:transparent;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 915px) {
   p{
   font-size: 14px;
   }
 
+  #abt-btn, #media-btn, #link-btn, #char-btn{
+    min-width: 120px;
+  }
+
 }
 
+@media screen and (max-width: 690px) {
+  #webtitle{
+    padding: 15px 10px 0px;
+  }
+
+  #buttoncontainer{
+      margin: 15px 10px;
+      flex-direction: column;
+  }
+
+  #abt-btn, #media-btn, #link-btn, #char-btn{
+    width: 100vw;
+    max-width: 100%;
+  }
+
+
+    .maintext{
+    margin:0px 10px;
+    padding: 5px 5px;
+  }
+}
 
 /* media page css */
 
